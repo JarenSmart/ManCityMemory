@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="extra">
+      <div id="score">Score: 0</div>
+      <div id="attempts">Attempts: 0</div>
+
+      <button class="button" onclick="newGame()">New Game</button>
+      <button class="button" onclick="reset()" id="reset">Reset</button>
+    </div>
+
     <section class="memory-game">
       <div class="memory-card" data-name="bernardo">
         <img class="front-face" src="img/bernardo.png" alt="bernardo" />
