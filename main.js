@@ -77,7 +77,7 @@ function resetBoard() {
   secondCard = null;
 }
 
-function redo() {
+function reset() {
   resetBoard();
   for (var i = cardsOpen.length - 1; i >= 0; i--) {
     cardsOpen[i].classList.remove("flip");
