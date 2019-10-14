@@ -1,36 +1,42 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   height: 100vh;
-  display: flex;
-  background: #0e7e33;
+  background: radial-gradient(#8cb3d3, #084c8b);
 }
 
 #score {
   font-size: 25px;
+  color: #7bc1fa;
+}
+
+#attempts {
+  font-size: 25px;
+  color: #7bc1fa;
+}
+
+.page-title {
+  color: #7bc1fa;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
 }
 
 .memory-game {
-  width: 640px;
-  height: 640px;
-  margin: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px, auto;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  perspective: 1000px;
-  margin-left: calc(20% - 120%);
 }
 
 .memory-card {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
+  width: 215px;
+  height: 215px;
   margin: 5px;
-  box-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.3);
   transition: all 0.5s;
   transform-style: preserve-3d;
   transform: scale(1);
@@ -53,6 +59,7 @@ body {
   position: absolute;
   backface-visibility: hidden;
   border-radius: 5px;
+  display: flex;
   background: #5aa6e4;
 }
 
@@ -61,6 +68,7 @@ body {
 }
 
 .extra {
+  grid-column: 1 / -1;
   color: black;
   font-size: 25px;
   padding-top: calc(25% - 30px);
