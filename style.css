@@ -41,7 +41,7 @@ svg {
 }
 
 .text-copy:nth-child(1) {
-  stroke: purple;
+  stroke: #cb2cda;
   animation-delay: -1;
 }
 
