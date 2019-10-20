@@ -2,29 +2,73 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  height: 100vh;
-  background: radial-gradient(#8cb3d3, #084c8b);
-}
-
 #score {
-  font-size: 25px;
-  color: #7bc1fa;
+  font-size: 28px;
+  color: #084c8b;
 }
 
 #attempts {
-  font-size: 25px;
-  color: #7bc1fa;
+  font-size: 28px;
+  color: #084c8b;
 }
 
-.page-title {
-  color: #5aa6e4;
-  text-align: center;
-  font-size: 6em;
-  font-family: Helvetica, sans-serif;
-  letter-spacing: 0.05em;
-  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+html,
+body {
+  margin-bottom: 10px;
+  height: 100vh;
+  font-weight: 800;
+}
+
+body {
+  background: radial-gradient(#8cb3d3, #084c8b);
+}
+
+svg {
+  display: block;
+  font: 12em "Arial";
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 6s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: purple;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #6cabdd;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #ffc659;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #1c2c5b;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #d4a12a;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
 }
 
 .memory-game {
@@ -36,8 +80,8 @@ body {
 }
 
 .memory-card {
-  width: 220px;
-  height: 215px;
+  width: 215px;
+  height: 220px;
   margin: 5px;
   transition: all 0.5s;
   transform-style: preserve-3d;
