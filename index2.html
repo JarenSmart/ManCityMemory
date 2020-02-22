@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>ManCityMemory</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <svg viewBox="0 0 1300 300">
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="80%">ManCity Match</text>
+    </symbol>
+
+    <g class="g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+
+  <header>
+    <div class="extra">
+      <div id="score">Score: 0</div>
+      <div id="attempts">Attempts: 0</div>
+
+      <button class="button btn1" onclick="newGame()">New Game</button>
+      <button class="button btn2" onclick="reset()">Reset</button>
+    </div>
+  </header>
+
+  <body>
+    <section class="memory-game">
+      <div class="memory-card" data-name="bernardo">
+        <img class="front-face" src="img/bernardo.png" alt="bernardo" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="bernardo">
+        <img class="front-face" src="img/bernardo.png" alt="bernardo" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="debruyne">
+        <img class="front-face" src="img/debruyne.png" alt="debruyne" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="debruyne">
+        <img class="front-face" src="img/debruyne.png" alt="debruyne" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="ederson">
+        <img class="front-face" src="img/ederson.png" alt="ederson" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="ederson">
+        <img class="front-face" src="img/ederson.png" alt="ederson" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="laporte">
+        <img class="front-face" src="img/laporte.png" alt="laporte" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="laporte">
+        <img class="front-face" src="img/laporte.png" alt="laporte" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="pep">
+        <img class="front-face" src="img/pep.png" alt="pep" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="pep">
+        <img class="front-face" src="img/pep.png" alt="pep" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="sane">
+        <img class="front-face" src="img/sane.png" alt="sane" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+
+      <div class="memory-card" data-name="sane">
+        <img class="front-face" src="img/sane.png" alt="sane" />
+        <img class="back-face" src="img/ManCityLogo.jpg" alt="CityBadge" />
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
